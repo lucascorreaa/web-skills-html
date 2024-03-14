@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+body :first-child {
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+.brands-list {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 62.5rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 15rem;
+
+  justify-items: stretch;
+  animation: scroll 20s linear infinite;
+}
+
+
+@keyframes scroll {
+  to {
+    translate: calc(-4 * 15rem);
+  }
+}
