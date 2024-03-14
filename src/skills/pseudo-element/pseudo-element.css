@@ -1,0 +1,8 @@
+/* before */
+
+/* before usage */
+p::before {
+    content: "Curso:";
+    color: green;
+     font-weight: bold;
+}

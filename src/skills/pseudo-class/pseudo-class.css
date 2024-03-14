@@ -1,0 +1,17 @@
+/* hover */
+
+button {
+    width: 310px;
+    height: 65px;
+    border-radius: 20px;
+    border: 1px solid blue;
+    background-color: transparent;
+    font-size: 35px;
+    color: blue;
+}
+
+/* hover usage */
+button:hover {
+    background-color: blue;
+    color: white;
+}
