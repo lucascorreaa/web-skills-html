@@ -15,3 +15,35 @@ button:hover {
     background-color: blue;
     color: white;
 }
+
+/* disabled */
+
+/* disabled usage */
+button:disabled {
+    background-color: #a6aec1;
+    color: #6c788e;
+    border: none;
+}
+
+/* active */
+
+/* active usage */
+button:active {
+    background-color: blue;
+    color: white;
+    border: 3px solid red;
+}
+
+/* focus */
+
+/* focus usage */
+button:focus {
+    border: 10px solid #0c0636;
+}
+
+/* focus-visible */
+
+/* focus-visible usage */
+button:focus {
+    border: 10px solid #0c0636;
+}
