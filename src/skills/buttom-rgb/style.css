@@ -1,0 +1,111 @@
+.bn5 {    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centralizado tanto horizontal quanto verticalmente */
+        
+    font-size: 24px;
+    padding: 20px;
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    text-align: center;
+    z-index: 1;
+}
+    
+.bn5:before {
+    content: "";
+    background: linear-gradient(
+    45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000
+      );
+  
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowingbn5 20s linear infinite;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      border-radius: 30px;
+    }
+    
+    @keyframes glowingbn5 {
+      0% {
+        background-position: 0 0;
+      }
+      50% {
+        background-position: 400% 0;
+      }
+      100% {
+        background-position: 0 0;
+      }
+    }
+    
+    .bn5:active {
+      color: #000;
+    }
+    
+    .bn5:active:after {
+      background: transparent;
+    }
+    
+    .bn5:hover:before {
+      opacity: 1;
+    }
+    
+.bn5:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #191919;
+    border-radius: 30px;
+}
+  
+.bn-title {
+    top: 100%;
+    left: 50%;
+}
+  
+
+.buttons-container {
+    display: flex;
+    justify-content: center; /* Alinha os botões horizontalmente */
+    align-items: center; /* Centraliza verticalmente os botões */
+    height: 100vh; /* Define a altura para ocupar toda a tela */
+}
+  
+.buttons-container button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #111;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 50px;
+}
+  
