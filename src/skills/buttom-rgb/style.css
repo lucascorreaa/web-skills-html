@@ -1,4 +1,4 @@
-.bn5 {    
+.button-rgb {    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,7 +19,7 @@
     z-index: 1;
 }
     
-.bn5:before {
+.button-rgb:before {
     content: "";
     background: linear-gradient(
     45deg,
@@ -42,13 +42,13 @@
       filter: blur(5px);
       width: calc(100% + 4px);
       height: calc(100% + 4px);
-      animation: glowingbn5 20s linear infinite;
+      animation: glowingbutton-rgb 20s linear infinite;
       opacity: 0;
       transition: opacity 0.3s ease-in-out;
       border-radius: 30px;
     }
     
-    @keyframes glowingbn5 {
+    @keyframes glowingbutton-rgb {
       0% {
         background-position: 0 0;
       }
@@ -60,19 +60,19 @@
       }
     }
     
-    .bn5:active {
+    .button-rgb:active {
       color: #000;
     }
     
-    .bn5:active:after {
+    .button-rgb:active:after {
       background: transparent;
     }
     
-    .bn5:hover:before {
+    .button-rgb:hover:before {
       opacity: 1;
     }
     
-.bn5:after {
+.button-rgb:after {
     z-index: -1;
     content: "";
     position: absolute;
@@ -83,29 +83,3 @@
     background: #191919;
     border-radius: 30px;
 }
-  
-.bn-title {
-    top: 100%;
-    left: 50%;
-}
-  
-
-.buttons-container {
-    display: flex;
-    justify-content: center; /* Alinha os botões horizontalmente */
-    align-items: center; /* Centraliza verticalmente os botões */
-    height: 100vh; /* Define a altura para ocupar toda a tela */
-}
-  
-.buttons-container button {
-    padding: 10px 20px;
-    border-radius: 15px;
-    background-color: #111;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    margin-top: 50px;
-}
-  
