@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 'Inter';
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border: 2px solid black;
+    margin-bottom: 60px;
+}
+
+.main{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pricing-plan{
+    padding: 20px;
+}
+
+.precing-wrapper{
+    display: flex;
+    padding: 2em;
+
+    .plan-text{
+        margin: 16px 0px;
+    }
+}
+.precing-section{
+    height: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.pricing-plan{
+    border: 1px solid var(--secundary);
+    border-bottom-right-radius: 0px;
+    border-radius: 8px;
+
+    
+
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-plan.one .pricing-plan {
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0px;
+}
+
+.container-plan.two .pricing-plan {
+    
+    height: calc(100% + 20px);
+    margin-top: -20px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 16px;
+    
+    h2{
+        color: var(--primary)
+    }
+    .plan-btn .bg{
+        background-color: var(--primary);
+        color: white;
+        font-weight: 600;
+    }
+
+    .bg:hover{
+        background-color: #5f58e4;
+    }
+
+    .plan-mostpopular{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        p{
+            font-weight: 600;
+            border-radius: 30px;
+            padding: 4px 10px;
+            background:  #4F46E51A;
+            color: var(--primary);
+        }
+    }
+}
+
+.container-plan.try .pricing-plan {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+    
+}
+
+.pricing-plan.try .pricing-plan{
+    height: 300px;
+}
+
+.strong button{
+    font-weight: 600;
+}
+
+span{
+    font-size: 14px;
+    i{
+        margin-right: 12px;
+        color: var(--primary)
+    }
+}
+
+.plan-title{
+    font-size: 24px;
+}
+.plan-price{
+    font-size: 14px;
+    color: #4B5563;
+    font-weight: 600;
+    span{
+        color: black;
+        font-size: 30px;
+    }
+}
+
+.pricing-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.lists{
+    p{
+        margin: 12px 0px;
+    }
+}
+
+
+
+.plan-btn{
+    display: flex;
+    justify-content: center;
+    button{
+        font-size: 14px;
+        cursor: pointer;
+        width: 80%;
+        padding: 8px 0px;
+        background-color: transparent;
+        border-radius: 8px;
+        transition: 0.2s;
+        border:1px solid rgb(59 130 246 / 0.5);
+    }
+}
+
+button:hover{
+    border: var(--primary) 1px solid;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .precing-wrapper {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center; 
+    }
+
+
+}
