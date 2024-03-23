@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Full Page Tabs</title>
+</head>
+
+<body>
+    <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+    <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">Notícias</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contato</button>
+    <button class="tablink" onclick="openPage('About', this, 'orange')">Sobre</button>
+
+    <div id="Home" class="tabcontent">
+        <h3>Home</h3>
+
+    </div>
+
+    <div id="News" class="tabcontent">
+        <h3>Notícias</h3>
+
+    </div>
+
+    <div id="Contact" class="tabcontent">
+        <h3>Contato</h3>
+
+    </div>
+
+    <div id="About" class="tabcontent">
+        <h3>Sobre</h3>
+
+    </div>
+    <script src="./js/main.js"></script>
+    
+</body>
+
+</html>
