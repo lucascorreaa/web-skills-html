@@ -1,0 +1,28 @@
+
+
+.listaIcons{
+    display: flex;
+   justify-content:space-evenly;
+    gap: 30px;
+}
+
+img {
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #4a4e69;
+
+}
+
+.moldura {
+    width: 150px;
+    height: 150px;
+    border-radius: 5%;
+    background-color: #edf2f4;
+    border: 0.5px solid #4a4e69; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
