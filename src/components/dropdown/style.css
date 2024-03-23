@@ -1,0 +1,45 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.menu{
+width: 100vw;
+background-color: black;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.menu ul{
+list-style: none;
+margin-top: 2%;
+}
+
+.menu ul li{
+    background-color: black;
+    color: goldenrod;
+    width: 170px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    font-size: 16;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu ul li:hover{
+    background: gray;
+}
+
+.menu ul ul{
+    display: none;
+    margin: 0px;  
+}
+
+.menu ul li:hover>ul{
+    display: block;
+}
