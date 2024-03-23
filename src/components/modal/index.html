@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Modal</title>
+</head>
+
+<body>
+
+    <h1>Modal in CSS</h1>
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+
+        <div class="container">
+            <h1>Título do modal</h1>
+
+            <hr>
+            <p>Conteúdo no corpo do modal.</p>
+            <p>Aqui você pode inserir todo o conteúdo necessário.</p>
+
+        </div>
+
+    </div>
+
+
+    <button onclick="document.getElementById('id01').style.display='block'" class="btn-login-modal">Modal</button>
+
+</body>
+
+</html>
