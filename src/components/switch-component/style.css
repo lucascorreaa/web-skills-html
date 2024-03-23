@@ -1,0 +1,36 @@
+
+span{
+    display: flex;
+    align-items: center;
+
+}
+button{
+    padding: 4px;
+    border-radius: 40px;
+    align-self: auto;
+}
+
+.button-status{
+    background-color: white;
+    padding: 10px 20px;
+    cursor: pointer;        
+}
+
+.marker{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 40px;
+    border: 2px solid black;
+    margin-top: 70px;
+    margin-left: -40px;
+}
+
+.marker-online{
+    background-color: green;
+}
+
+.marker-offline{
+    background-color: red;
+}
+
