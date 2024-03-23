@@ -1,0 +1,68 @@
+button{
+    background-size: 220%;
+    box-shadow: 0 .2em .3em rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    background-position: 100%;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 15px;
+    transition: all .2s ease-out;
+    font-weight: 900;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 .3em rgba(0, 0, 0, 0.25);
+    background-position: 0;
+    color: #fff;
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+button:hover span {
+    padding-right: 25px;
+}
+  
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+  .btn-cut {
+    color: #04AA6D;
+    border: 3px solid #04AA6D;
+    background-image: linear-gradient(110deg, #04AA6D 0%, #04AA6D 50%, transparent 50%, transparent 100%);
+}
+
+.btn-paste {
+    color: #2196F3;
+    border: 3px solid #2196F3;
+    background-image: linear-gradient(110deg, #2196F3 0%, #2196F3 50%, transparent 50%, transparent 100%);
+}
+
+.btn-copy {
+    color: #ff9800;;
+    border: 3px solid #ff9800;
+    background-image: linear-gradient(110deg, #ff9800 0%, #ff9800 50%, transparent 50%, transparent 100%);
+}
