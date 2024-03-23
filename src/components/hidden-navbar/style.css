@@ -1,0 +1,35 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.side-nav {
+    height: 100%;
+    width: 0px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.side-nav > a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 8px 8px 32px;
+    color: aliceblue;
+    font-size: 22px;
+    transition: 0.3s;
+
+}
+.side-nav >a:hover {
+    color: rgb(181, 192, 202);
+}
+.side-nav > .closeNavBtt {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+
+}
