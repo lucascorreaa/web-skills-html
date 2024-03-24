@@ -12,19 +12,21 @@
 
     <h1>Modal in CSS</h1>
 
-    <div id="id01" class="modal">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close"
-            title="Close Modal">&times;</span>
+    <div id="overlay" onclick="document.getElementById('id01').style.display='none'">
 
-        <div class="container">
-            <h1>Título do modal</h1>
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 
-            <hr>
-            <p>Conteúdo no corpo do modal.</p>
-            <p>Aqui você pode inserir todo o conteúdo necessário.</p>
+            <div class="container">
+                <h1>Título do modal</h1>
+
+                <hr>
+                <p>Conteúdo no corpo do modal.</p>
+                <p>Aqui você pode inserir todo o conteúdo necessário.</p>
+
+            </div>
 
         </div>
-
     </div>
 
 
