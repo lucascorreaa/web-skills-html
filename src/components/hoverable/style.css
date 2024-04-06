@@ -1,0 +1,57 @@
+
+#mySidenav a {
+    position: absolute;
+    /* Posição fixa do componente na tela*/
+    left: -70px;
+    /* Posição interna da seta antes do click*/
+    transition: 0.3s;
+  /* transição da seta no click; */
+    padding: 25px;
+    /* margem interna */
+    width: 150px;
+    /* largura da seta */
+    text-decoration: none;
+    /* remoção da decoração de texto */
+    font-size: 20px;
+    /* tamanho da fonte */
+    color: white;
+    /* cor da fonte  */
+    clip-path: polygon(0% 0%, 60% 0%, 100% 50%, 60% 100%, 0% 100%, 0% 80%);
+    /* Formato do poligono */
+    text-align: center;
+    /* alinhamento do texto no centro */
+
+}
+
+.sidenav>a {
+    margin-left: 25px;
+}
+
+#mySidenav a:hover {
+    left: 0;
+    /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+    top: 20px;
+    background-color: #04AA6D;
+}
+
+#blog {
+    top: 80px;
+    background-color: #2196F3;
+    /* Blue */
+}
+
+#projects {
+    top: 140px;
+    background-color: #f44336;
+    /* Red */
+}
+
+#contact {
+    top: 200px;
+    background-color: #555
+        /* Light Black */
+}
